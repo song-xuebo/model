@@ -1,0 +1,44 @@
+body{ background: white;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 10rem; font-size: 1rem; text-align: center;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act_but{ color: #e83928; border-bottom:2px solid #e83928;}
+
+.input_list{ width: 21.46rem; height: 22.933rem; margin: auto; margin-top: 4rem;}
+.input_list li{ height:3.933rem; border-bottom: 1px solid #bfbfbf;}
+.input_list .tel{ width: 13rem; height: 1.66rem;  display: inline-block; margin: 0; padding: 0; border: 0;}
+
+.input_list li:nth-child(1),.input_list li:nth-child(2),.input_list li:nth-child(3){ padding-top: 1.5rem; }
+.input_list li:nth-child(1) input,.input_list li:nth-child(2) input,.input_list li:nth-child(3) input{ height: 2rem; line-height: 2rem; padding-left: 0.5rem; font-size: 1rem;border: 0;}
+.input_list li:nth-child(1) button{ float: right; font-size: 1rem; border: 0;}
+.input_list li:nth-child(4) p{ float: left;}
+.input_list li:nth-child(4) p:nth-child(1){ width: 2.6rem; height: 2.6rem; float: left;}
+.input_list li:nth-child(4) p:nth-child(2){ width: 18.86rem; padding-top: 1rem; font-size: 0.8rem;}
+.input_list li:nth-child(4) p:nth-child(2) a{ color: #666;}
+.input_list li:nth-child(4) p:nth-child(1){padding-top: 1.2rem; text-align: center; }
+.input_list li:nth-child(4) p:nth-child(1) checkbox{ zoom:180%;}
+
+/*隐藏掉我们模型的checkbox*/
+    .input_list li:nth-child(4) p:nth-child(1) .input_agreement_protocol {appearance: none;-webkit-appearance: none;outline: none;display: none;}
+    /*未选中时*/        
+   .input_list li:nth-child(4) p:nth-child(1) .input_agreement_protocol+label {width: 16px;height: 16px;cursor: pointer;display: inline-block;background:url(../img/check_box_bg.png) no-repeat;background-position-x: 0px;background-position-y: -20px;position: relative;top: 3px;
+}
+   /*选中checkbox时,修改背景图片的位置*/            
+   .input_list li:nth-child(4) p:nth-child(1) .input_agreement_protocol:checked+label{background-position: 0 0px}
+.input_list li:nth-child(4){ border-bottom: 0;}
+.input_list li:nth-child(5) button{ width: 21.33rem; height: 2.93rem; background: #e83928; color: white; font-size: 1rem; border-radius: 3rem; border: 0;}
+.input_list li:nth-child(5){ margin-top: 2rem; border: 0;}
+
+
+
+
+
+
+
+

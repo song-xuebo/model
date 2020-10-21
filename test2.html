@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>上传file属性</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/m.min.css"/>
+	<script type="text/javascript" src="js/m.min.js" ></script>
+	<script src="js/jquery-1.11.2.js"></script>
+</head>
+<body>
+		<form class="mui-input-group">
+	<div class="mui-input-row" id="liMONTH">
+		<label>选择月份</label>
+		<input type='text' class="font mui-left" placeholder="请选择" id="datMONTH" readonly="true">
+		<span class="mui-pull-right"><a class="mui-navigate-right" ></a></span>
+	</div>
+</form>
+
+		<script type="text/javascript">
+   document.getElementById('liMONTH').addEventListener('tap',function () {
+    var datePicker=new mui.DtPicker({
+	    type:'month',//若只显示年月日，类型为date，
+	});
+	datePicker.show(function(selectItems){
+	    h("#datMONTH").val(selectItems);
+    });
+})
+</script>
+</html>
+

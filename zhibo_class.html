@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/zhibo_class.css"/>
+		<link href="css/m.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/zhibo_class.css" />
+		<script src="js/m.min.js"></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+	</head>
+
+	<body>
+		<div class="zhibo_class_header_nav">
+			<div class="l"><a class="mui-icon mui-icon-arrowleft"></a></div>
+			<div class="r">
+				直播课程
+			</div>
+		</div>
+		
+		<div class="main_btn">
+			<div class="main_btn_img">
+				<li class="act_click"><a href="./dianbo_xiangqing.html">VID设计</a></li>
+				<li><a href="./dianbo_xiangqing.html">摄影</a></li>
+				<li><a href="./dianbo_xiangqing.html">图像处理</a></li>
+				<li><a href="./dianbo_xiangqing.html">影视后期</a></li>
+				<li><a href="./dianbo_xiangqing.html">室内设计</a></li>
+				<li><a href="./dianbo_xiangqing.html">UID设计</a></li>
+				<li><a href="./dianbo_xiangqing.html">UED设计</a></li>
+				<li><a href="./dianbo_xiangqing.html">HTML5开发</a></li>
+				<li><a href="./dianbo_xiangqing.html">PHP开发</a></li>
+				<li><a href="./dianbo_xiangqing.html">JAVA开发</a></li>
+			</div>
+		</div>
+		<script>
+			$('.main_btn .main_btn_img li').click(function(){
+				$(this).addClass('act_click').siblings().removeClass('act_click')
+				//……
+			})
+		</script>
+		<div class="zhibo_list">
+			<div class="zhibo_list_box zhibo_list_show">
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>周期：4.5月<label>（面授+直播）</span>
+						<span><a href='###'>马上报名</a></span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>课程：22门</span>
+						<span>周期：4.5月</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>课程：22门</span>
+						<span>周期：4.5月</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content02.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>课程：2门</span>
+						<span>周期：4.5月</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>课程：3门</span>
+						<span>周期：4.5月</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content02.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>课程：4门</span>
+						<span>周期：4.5月</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content02.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>课程：30门</span>
+						<span>周期：4.5月</span>
+					</p>
+				</li>
+			</div>
+		</div>
+		<div class="main_bottom">
+		    <div class="main_bottom_center">
+		    	<li class="main_bottom1"><a href="./index.html">首页</a></li>
+				<li class="main_bottom2 two"><a href="###">直播</a></li>
+				<li class="main_bottom3"><a href="./dianbo_class.html">点播</a></li>
+				<li class="main_bottom4"><a href="./wode.html">我的</a></li>
+		    </div>
+		</div>
+		<script>
+			$('.main_bottom_center li:nth-child(2)').addClass('two').removeClass('main_bottom2')
+			$('.main_bottom_center li:nth-child(1)').addClass('main_bottom1').removeClass('one')
+			$('.main_bottom_center li:nth-child(3)').addClass('main_bottom3').removeClass('three')
+			$('.main_bottom_center li:nth-child(4)').addClass('main_bottom4').removeClass('four')
+		</script>
+	</body>
+
+</html>

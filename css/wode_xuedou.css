@@ -1,0 +1,22 @@
+body{ background: #f8f8f8;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem; text-align: center; font-size: 1rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 4rem; font-size: 1rem;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act{ color: #e83928;}
+
+.xuedou_nums{ width: 25rem; height: 8.733rem; margin-top: 3.933rem; background: white;}
+.xuedou_nums div:nth-child(1){ height: 3.733rem; line-height: 3.733rem; font-size: 1rem; color: #666666; text-align: center;}
+.xuedou_nums div:nth-child(2){ height: 2.666rem; line-height: 2.666rem; text-align: center; font-size: 2.666rem;}
+.xuedou_getmed{width: 25rem; padding: 2rem 1.6rem 0 1.6rem ; height: auto; overflow: hidden;}
+.xuedou_getmed li{ font-size: 1.1rem; color: #666; line-height: 30px; }
+.xuedou_getmed li+li{ background: url(../img/point.png) no-repeat 0 0.5rem; background-size: 0.5rem 0.5rem; padding-left: 1rem; font-size: 0.9rem; }
+
+
+
+

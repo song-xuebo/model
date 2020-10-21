@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link href="css/m.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/gerenzhongxing.css" />
+		<script src="js/m.min.js"></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+		<script src="Mdate/iScroll.js"></script>
+    	<script src="Mdate/Mdate.js"></script>
+	</head>
+	<body>
+		<div class="zhibo_class_header_nav">
+			<div class="l"><a href="./wode.html" class="mui-icon mui-icon-arrowleft"></a></div>
+			<div class="r">我的</div>
+		</div>
+		<input type="file" accept="image/*" style="display:none" id="files-2"/>
+		<div class="header_img">
+			<div><a href="#" id="button"><img src="img/person.jpg" /></a></div>
+			<div>更换头像</div>
+		</div>
+		<script>
+			var but = document.getElementById("button");
+			var file2 = document.getElementById("files-2");
+			but.addEventListener("click", function(e) {
+				if(file2) {
+					file2.click()
+					$('#files-2').change(function(){
+						console.log(this.files.length)  //文件个数
+						var oFReader = new FileReader();  //实例化
+						var file = document.getElementById('files-2').files[0];
+						oFReader.readAsDataURL(file);  //加载
+						oFReader.onloadend = function(oFRevent){
+							var src = oFRevent.target.result;
+							$('img').attr('src',src);  //赋值
+					    }
+					})
+				}
+			}, false)
+		
+		</script>
+		
+		<div class="list">
+			<li>
+				<p>
+					<a href="./yonghunicheng.html"><span>用户昵称</span><span>花开若相依 <label class="mui-icon mui-icon-arrowright"></label></span></a>
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="javascript:showPop()"><span>性别</span><span><label class="gender" style="font-size: 1rem;">女</label> <label class="mui-icon mui-icon-arrowright"></label></span></a>
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="./test2.html"><span>出生</span><span style="float: right;"><input type="text" style="" id="dateSelectorOne" placeholder="选择日期" readonly="readonly" /><label class="mui-icon mui-icon-arrowright"></label></span></a>
+				</p>
+			</li>
+		</div>
+		<script type="text/javascript">		
+			new Mdate("dateSelectorOne", {
+			    beginYear: "1970",
+			    beginMonth: "10",
+			    beginDay: "24",
+			    endYear: "2019",
+			    endMonth: "12",
+			    endDay: "12",
+			    format: "-"
+			})
+		</script>
+		<div class="list">
+			<li>
+				<p>
+					
+					<a href="./shezhi.html"><span>设置</span><span><label class="mui-icon mui-icon-arrowright"></label></span></a>
+				</p>
+			</li>
+		</div>
+		
+		<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action">
+			<!-- 可选择菜单 -->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">男</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">女</a>
+				</li>
+			</ul>
+			
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#sheet1"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			function showPop() {
+				mui('#sheet1').popover('toggle');
+			}
+			$('.mui-table-view li').click(function(){
+				var index_=$(this).index()
+				if(index_==0){
+					$('.gender').html('男')
+					$('#sheet1').css('display','none').removeClass('mui-active')
+					$('.mui-backdrop-action').css('display','none')
+				}else{
+					$('.gender').html('女')
+					$('#sheet1').css('display','none').removeClass('mui-active')
+					$('.mui-backdrop-action').css('display','none')
+				}
+			})
+		</script>
+	</body>
+
+</html>

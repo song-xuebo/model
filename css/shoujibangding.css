@@ -1,0 +1,19 @@
+body{ background: #f8f8f8;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem; text-align: center; font-size: 1rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 4rem; font-size: 1rem;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act{ color: #e83928;}
+
+.list{ width: 21.66rem; height: 3rem; margin: auto; background: white; border-radius: 3rem; margin-top: 3.733rem; border:1px solid #e3e3e3; line-height: 3rem; background: url(../img/shouji_bg.png); background-repeat: no-repeat; background-size: 2rem auto; background-position:0.5rem 0.3rem ;}
+.list2{ background-position-y: -5.3rem;}
+.list input{width: 18rem; margin-left: 3rem; background: transparent; border: none; font-size: 0.933rem; padding-left: 0; padding-right: 0;}
+.list2 input{ width: 12rem;}
+.list2 button{ border: 0;  background: none; color: #333; height: 3rem; font-size: 0.933rem;}
+.tijiao{ width: 21.7rem; height: 3rem; background: #e83827; text-align: center; margin: auto; display: block; border: 0; border-radius: 30px; font-size: 1.2rem; color: white; margin-top: 2.6rem;}
+

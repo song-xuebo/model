@@ -1,0 +1,33 @@
+body{ background: #f8f8f8;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem; text-align: center; font-size: 1rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 4rem; font-size: 1rem;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act{ color: #e83928;}
+
+.header_img{ height: 10rem; padding-top: 1.7rem; background: white; margin-top: 3.533rem;}
+.header_img div:nth-child(1){ width: 5.13rem; height: 5.13rem; margin: auto; overflow: hidden; border-radius: 50%; }
+.header_img div img{ width: 5.13rem; height: auto;}
+.header_img div a{ display: block;width: 5.13rem; height: 5.13rem;}
+.header_img div:nth-child(2){ height: 2rem; font-size: 1rem; text-align: center; line-height: 2rem; color: #666;}
+.list{ height: 10rem;  margin-top: 0.8rem; }
+.list li{height: 3.3rem; border-bottom: 1px solid #f8f8f8;background: white;}
+.list li p a{ display: block; width: 21.8rem; height: 3.2rem;}
+.list li p{ width: 21.8rem; height: 3.2rem; margin: auto;}
+.list li p span{ display: block; height: 3.2rem; line-height: 3.2rem; }
+.list li p span:nth-child(1){ float: left;color: black;}
+.list li p span:nth-child(2){ float: right; color: #999;}
+.list li p span:nth-child(2) label{ font-size: 1.2rem;}
+.mui-table-view .mui-table-view-cell a{ font-size: 1rem; color: #000000;}
+.list li:nth-child(3) p input{width: 7.2rem; font-size: 1rem; height: 2rem; padding-right:0 ; text-align: right; border: 0;}
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/m.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/wodexuexi.css" />
+		<script src="js/m.min.js"></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+	</head>
+	<body>
+		<div class="zhibo_class_header_nav">
+			<div class="l"><a href="./wode.html" class="mui-icon mui-icon-arrowleft"></a></div>
+			<div class="r">
+				<div>
+					<li>我的学习</li> 
+				</div>
+			</div>
+		</div>
+		<div class="zhibo_class_title zhibo_class_list_clk">
+			<span>直播课程</span>
+			<span class="mui-icon mui-icon-arrowdown down"></span>
+			<span class="mui-icon mui-icon-arrowup up"></span>
+		</div>
+		<div class="zhibo_list zhibo_list_01">
+			<div class="zhibo_list_box zhibo_list_show">
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>主讲教师：1门</span>
+						<span>直播时间：07月30日 20:00</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>主讲教师：2门</span>
+						<span>直播时间：07月31日 20:00</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>主讲教师：2门</span>
+						<span>直播时间：07月31日 20:00</span>
+					</p>
+				</li>
+			</div>
+		</div>
+		<script>
+			$('.zhibo_class_list_clk').click(function(){
+				var div_obj=$('.zhibo_list_01').css('display')
+				if(div_obj=='block'){
+					$('.zhibo_list_01').slideUp(300)
+					$('.up').css('display','block')
+					$('.down').css('display','none')
+				}else{
+					$('.zhibo_list_01').slideDown(300)
+					$('.up').css('display','none')
+					$('.down').css('display','block')
+				}
+			})
+		
+		</script>
+		<div class="zhibo_class_title lubo_class_clk02" style="margin-top: 0.8rem;">
+			<span>录播教程</span>
+			<span class="mui-icon mui-icon-arrowdown down02"></span>
+			<span class="mui-icon mui-icon-arrowup up02"></span>
+		</div>
+		<div class="zhibo_list lubo_list">
+			<div class="zhibo_list_box zhibo_list_show">
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>主讲教师：1门</span>
+						<span>直播时间：07月30日 20:00</span>
+					</p>
+				</li>
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<span>主讲教师：2门</span>
+						<span>直播时间：07月31日 20:00</span>
+					</p>
+				</li>
+			</div>
+		</div>
+		<script>
+			$('.lubo_class_clk02').click(function(){
+				var div_obj=$('.lubo_list').css('display')
+				//alert(div_obj)
+				if(div_obj=='block'){
+					$('.lubo_list').slideUp(300)
+					$('.up02').css('display','block')
+					$('.down02').css('display','none')
+				}else{
+					$('.lubo_list').slideDown(300)
+					$('.up02').css('display','none')
+					$('.down02').css('display','block')
+				}
+			})
+		</script>
+	</body>
+</html>

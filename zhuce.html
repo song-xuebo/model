@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/m.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/zuce.css" />
+		<script src="js/m.min.js"></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+		<style type="text/css">
+			.mui-icon-eye{ margin-top: -2px;}
+		</style>
+	</head>
+	<body>
+		<div class="zhibo_class_header_nav">
+			<div class="l"><a class="mui-icon mui-icon-arrowleft"></a></div>
+			<div class="r">
+				<div>
+					<li>注册账户</li> 
+				</div>
+			</div>
+		</div>
+		
+		<div class="input_list">
+			<li>
+				<input type="text" placeholder="请输入手机号" onkeyup="this.value=this.value.replace(/\D/,'')" class="tel" id="tel"/><button id="yzmhq" onclick="getyzm()">获取验证码</button>
+			</li>
+			<li>
+				<input type="text" placeholder="请输入短信验证码">
+			</li>
+			<li>
+				<input type="password" placeholder="请输入密码（最少8位）">
+			</li>
+			<li>
+				<p>
+					<input class="input_agreement_protocol" type="checkbox" id="check1" checked="checked" />
+     				<label for="check1"></label>
+				</p>
+				<p>
+					<a href="###">请阅读并同意《优思慧用户使用协议》及《优思慧用户服务协议》</a>
+				</p>
+			</li>
+			<li>
+				<button>登录</button>
+			</li>
+		</div>
+		
+		<script type="text/javascript">
+			function getyzm(){
+				var time=60;
+				var obj=document.getElementById('yzmhq')
+				var val=document.getElementById('tel').value
+				//alert(val)
+				if(!(/^1[3456789]\d{9}$/.test(val))){ 
+        				mui.alert("手机号码有误，请重填",'温馨提示','确定');  
+        				document.getElementById('tel').focus()
+					}else{
+						obj.disabled=true;
+						var timeout=setInterval(function(){
+							time--;
+							if(time==0){
+								clearInterval(timeout);
+								obj.disabled=false;
+								obj.innerHTML='获取验证码'
+							}else{
+								obj.innerHTML=`请等候${time}秒`
+							}
+						},1000)
+					}
+				} 
+		</script>
+		
+	</body>
+</html>

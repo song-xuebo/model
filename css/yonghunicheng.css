@@ -1,0 +1,36 @@
+body{ background: #f8f8f8;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 10rem; font-size: 1rem; text-align: center;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act{ color: #e83928;}
+
+.zhibo_class_header_nav .r1{ width: 3.5rem; height: 2.933rem; float: left; line-height: 2.933rem; font-size: 1rem;}
+.zhibo_class_header_nav .r1 a{ color: black;}
+.nicheng_text{ height: 3.2rem; background: white; margin-top: 3.733rem;}
+.nicheng_text div:nth-child(1){ width: 21rem; margin-left: 1.56rem; float: left; height: 3.2rem; line-height: 3.2rem;}
+.nicheng_text div:nth-child(1) input{ font-size: 0.933rem; border: 0; padding: 0;}
+.nicheng_text div:nth-child(2){ font-size: 1.8rem; width: 2.4rem; height: 3.2rem; line-height: 3.4rem; float: left;} 
+.nicheng_text div:nth-child(2) a{ color: #666; display: block;width: 3.4rem; height: 3.2rem;}
+.tishi{ height: 3rem; line-height: 3rem; margin: 0 1.56rem 0 1.56rem; font-size: 0.933rem; color: #999}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

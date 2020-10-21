@@ -1,0 +1,24 @@
+body{ background: #f8f8f8;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem; text-align: center; font-size: 1rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 4rem; font-size: 1rem;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act{ color: #e83928;}
+
+.list{ height: 3.2rem; background: white; margin-top: 0.8rem; padding-left: 1.2rem; padding-right: 1.2rem; line-height: 3.2rem;font-size: 0.933rem;}
+.list_one{margin-top: 3.733rem;}
+.list_one li:nth-child(1){ width: 7.6rem; float: left;}
+.list_one li:nth-child(2){ width: 3rem; float: right; margin-top: 0.7rem;}
+.list a{height: 3.2rem;line-height: 3.2rem; color: black;}
+
+
+
+
+
+
+

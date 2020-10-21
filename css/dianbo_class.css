@@ -1,0 +1,68 @@
+body{ background: #f8f8f8;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem; text-align: center; font-size: 1rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 4rem; font-size: 1rem;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act{ color: #e83928;}
+
+/*滑动按钮*/
+.main_btn{ height: 2.933rem; width:25rem ; background: white; margin-top: 3.7rem;}
+.main_btn_img{ width: 22.55rem; height: 2.933rem; margin: auto; white-space: nowrap; overflow: hidden; font-size: 0px; overflow-x:scroll;}
+.main_btn_img li{ width: auto; height: 2.933rem; display: inline-block; text-align: center; line-height: 2.933rem; color: black; font-size: 0.9rem; padding: 0 0.5rem 0 0.5rem;}
+.main_btn_img li a{color: #666;}
+.act_click{ border-bottom: 1px solid #e83928;}
+.main_btn_img li:nth-child(1){ margin-left: 0rem;}
+.main_btn_img li img{ width: 3.23rem; height: auto;}
+.img_leng{width: 30px; height: 2px; margin: auto; background: #ebedf2; margin-top: 15px;}
+.scoll_block{ width: 10px; height: 2px; background: #e83928;}
+.renmeng_tuijian{ height: 3.83rem; width: 23.94rem; font-size: 1.2rem; line-height: 3.83rem; margin-left: 1.06rem;}
+.zhibo_list{ width: 25rem; background: #fff; height: auto; overflow: hidden; margin-top: 0.8rem;}
+.zhibo_list div{display: none; height:auto ; overflow: hidden;}
+.zhibo_list .zhibo_list_show{ display: block;}
+
+.zhibo_list div li{ width: 22rem; height: auto; overflow: hidden; margin: auto; margin-top: 1.2rem;}
+
+.zhibo_list div li:last-child{ margin-bottom: 6rem;}
+.zhibo_list div li p{ float: left; margin-bottom: 0; width: 10.5rem; height: 12.666rem;}
+.zhibo_list div li p span{ display: block; height: 1.6rem; line-height: 1.6rem;}
+.zhibo_list div li p .zhibo_list_title1{ font-size: 0.933rem; color: #ff0000;}
+.zhibo_list div li p .zhibo_list_title2{ font-size: 0.8rem;}
+.zhibo_list div li p .zhibo_list_title4{ background: url(../img/zhibo_list_shouchang_ico2.png) no-repeat; background-size: 0.8rem 0.8rem; background-position: left center; padding-left: 1rem;}
+.zhibo_list div li p:nth-child(2n+2){ margin-left: 1rem;}
+
+
+
+/*底部*/
+.main_bottom{ height:4.533rem;/*一致*/ width: 25rem; background: white; margin-top: 0.8rem; position: fixed; bottom: 0px; box-shadow: darkgrey 10px 10px 30px 5px; }
+.main_bottom .main_bottom_center li,.main_bottom .main_bottom_center li a{ width: 1.6rem; height: 2.05rem; float: left; display: block; font-size: 0.8rem; color: #666; text-decoration: none; padding-top: 0.9rem;}
+.main_bottom_center{ width: 20.06rem; height: 2.866rem; margin: auto; margin-top: 0.8rem; }
+.main_bottom_center .main_bottom1{ background: url(../img/bottom_02.png) no-repeat; background-size: 1.6rem 2.86rem; }
+.main_bottom_center .main_bottom1{ background: url(../img/bottom_02.png); background-size: 1.6rem 2.86rem; }
+.main_bottom_center .main_bottom2{ background: url(../img/bottom_03.png); background-size: 1.6rem 2.86rem; margin-left: 4.4rem; }
+.main_bottom_center .main_bottom3{ background: url(../img/bottom_04.png); background-size: 1.6rem 2.86rem; margin-left: 4.4rem;}
+.main_bottom_center .main_bottom4{ background: url(../img/bottom_01.png); background-size: 1.6rem 2.86rem; margin-left: 4.4rem;}
+
+.main_bottom_center .one{ background: url(../img/bottom_022.png);background-size: 1.6rem 2.86rem; background-size: 1.6rem 2.86rem; margin-left: 0rem; }
+.main_bottom_center .two{ background: url(../img/bottom_033.png);background-size: 1.6rem 2.86rem; background-size: 1.6rem 2.86rem; margin-left: 4.4rem; }
+.main_bottom_center .three{ background: url(../img/bottom_044.png);background-size: 1.6rem 2.86rem; background-size: 1.6rem 2.86rem; margin-left: 4.4rem; }
+.main_bottom_center .four{ background: url(../img/bottom_011.png);background-size: 1.6rem 2.86rem; background-size: 1.6rem 2.86rem; margin-left: 4.4rem; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

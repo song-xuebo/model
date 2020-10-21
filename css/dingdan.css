@@ -1,0 +1,100 @@
+body{ background: white;}
+li{list-style: none;}
+/*头*/
+.zhibo_class_header_nav{ width: 25rem; height: 2.933rem; background: white; position: fixed; top: 0;}
+.zhibo_class_header_nav>.l{ width: 2.4rem; height: 2.933rem;  margin-left: 1.2rem; line-height: 2.933rem; float: left;}
+.zhibo_class_header_nav>.l a{ color: #000000; display: block;width: 2.4rem; height: 2.933rem; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r{ width:17.8rem; height: 2.933rem; float: left; line-height: 2.933rem;}
+.zhibo_class_header_nav>.r div{width: 10rem; height: 2.933rem; margin: auto;} 
+.zhibo_class_header_nav>.r div li{ float: left; width: 10rem; font-size: 1rem; text-align: center;}
+.zhibo_class_header_nav>.r div li:nth-child(2){ margin-left: 2rem;}
+.act{ color: #e83928;}
+
+/*底部*/
+.main_bottom{ height:3.2rem;/*一致*/ width: 25rem; background: white; margin-top: 0.8rem; position: fixed; bottom: 0px;  border-top: 1px solid #f8f8f8;}
+
+/**/
+.main_bottom li{ float: left; font-size: 1.266rem; color: #f10000;}
+.main_bottom li:nth-child(1){ width: 9.133rem; height: 3.2rem; text-align: center; line-height: 3.2rem; border-right: 1px solid #f8f8f8;}
+.main_bottom li:nth-child(1) span{ display: block;}
+.main_bottom li:nth-child(2) a{font-size: 0.95rem; color: white; display: block; width: 8.866rem; height: 3.2rem; line-height: 3.2rem; text-align: center;}
+.main_bottom li:nth-child(2){ background: #e83928; color: white; float: right;}
+
+/*订单列表*/
+.zhibo_list{ width: 25rem; background: #fff; height: auto; overflow: hidden; margin-top: 2.933rem;}
+.zhibo_list div{display: none; height:auto ; overflow: hidden;}
+.zhibo_list .zhibo_list_show{ display: block;}
+.zhibo_list div li{ width: 22.6rem; height: 5.333rem; margin: auto; margin-top: 1.2rem;}
+.zhibo_list div li:last-child{ margin-bottom: 6rem;}
+.zhibo_list div li p{ float: left; margin-bottom: 0;}
+.zhibo_list div li p:nth-child(1){ width: 9.4rem; height: 5.333rem; border-radius: 0.2rem; background-size: 9.4rem 5.333rem;}
+.zhibo_list div li p:nth-child(2){ width: 12.4rem; height: 5.333rem; margin-left: 0.8rem;}
+.zhibo_list div li p:nth-child(2) span{ display: block; line-height: 25px;}
+.zhibo_list div li p:nth-child(2)>span:nth-child(1){ font-size: 1rem; color: black; margin-top: 0.5rem;}
+.zhibo_list div li p:nth-child(2) label span:nth-child(2){  color: #e83928; font-size: 1.266rem; }
+.zhibo_list div li p:nth-child(2) span:nth-child(3){ color: #666; }
+
+.pirce span{ display: block; float: left; }
+
+.bottom_alert{ width: 25rem; height: 22rem; background: white; position: absolute; bottom: 0rem; transition: all 0.3s; opacity: 0; z-index: -1;}
+.mask{background: rgba(0,0,0,0.3); width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: -2; opacity: 0; transition: all 0.3s;}
+.bottom_alert_box{ width: 25rem; height: 20rem; margin: 1rem 0rem 0rem 0rem;}
+
+
+.bottom_alert_box li{ height: 2.5rem; line-height: 2.5rem; border-bottom: 1px solid #dddddd; padding: 0rem 1.5rem 0rem 1.5rem; }
+.bottom_alert_box li:nth-child(1){}
+.bottom_alert_box li:nth-child(1) span:nth-child(1){ display: block; background: url(../img/dingdan_close.png) no-repeat; background-position: center center; background-size: 1.3rem 1.3rem; width: 1.6rem; height: 2.5rem; float: left; margin-top: -0.4rem; }
+.bottom_alert_box li:nth-child(1) span:nth-child(2){ width: 18.6rem; float: left; text-align: center; font-size: 1rem; margin-top: -0.4rem;}
+.bottom_alert_box li:nth-child(2){ font-size: 2.33rem; height: 4rem; text-align: center; line-height: 4rem;}
+.bottom_alert_box li:nth-child(3) span:nth-child(1){display: block; float: left; width: 1.9rem; height: 2.5rem; background-image: url(../img/zhifubao.png); background-size: 1.9rem 1.9rem; background-position: center center; background-repeat: no-repeat;}
+.bottom_alert_box li:nth-child(3) span:nth-child(2){display: block; margin-left: 1rem; float: left;}
+.bottom_alert_box li:nth-child(4) span:nth-child(1){display: block; float: left; width: 1.9rem; height: 2.5rem; background-image: url(../img/weixin.png); background-size: 1.9rem 1.9rem; background-position: center center; background-repeat: no-repeat;}
+.bottom_alert_box li:nth-child(4) span:nth-child(2){display: block; margin-left: 1rem; float: left;}
+.bottom_alert_box li:nth-child(5){ height: 6.3rem; font-size: 0.8rem; color: #999;}
+.bottom_alert_box li:nth-child(6){ height: 3.333rem; background: #e83928;text-align: center; line-height: 3.333rem; color: white;}
+.red{color: red;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

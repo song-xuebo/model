@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/m.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/dingdan.css" />
+		<script src="js/m.min.js"></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+	</head>
+	<body>
+		<div class="zhibo_class_header_nav">
+			<div class="l"><a class="mui-icon mui-icon-arrowleft"></a></div>
+			<div class="r">
+				<div>
+					<li>提交订单</li> 
+				</div>
+			</div>
+		</div>
+		<div class="zhibo_list">
+			<div class="zhibo_list_box zhibo_list_show">
+				<li>
+					<p><img src="img/main_content01.png" style="width: 9.4rem; height: 5.333rem;"/></p>
+					<p>
+						<span>热门教程热门教程热门教</span>
+						<label class="pirce" style="display: block; margin-top: 0.6rem; height: 1.2rem;">
+							<span>直播：</span>
+							<span>￥8888.00</span>
+						</label>
+						
+					</p>
+				</li>
+				
+			</div>
+			
+		</div>
+		<div class="main_bottom">
+		   <li>¥8888.00</li>
+		   <li class="tijiao_dingdan"><a href="###">提交订单</a></li>
+		</div>
+		<div class="bottom_alert">
+			<div class="bottom_alert_box">
+				<li><span class="close"></span><span>确认付款</span></li>
+				<li>¥8888.00</li>
+				<li class="zffs1"><span></span><span>支付宝</span></li>
+				<li class="zffs2"><span></span><span>微信</span></li>
+				<li>*请选择支付方式</li>
+				<li>立即付款</li>
+			</div>
+		</div>
+		<div class="mask"></div>
+		<script type="text/javascript">
+			$('.tijiao_dingdan').click(function(){
+				//alert()
+				var opt=$('.bottom_alert').css('opacity')
+				if(opt==0){
+					$('.bottom_alert').css('opacity','100').css('z-index','100')
+					$('.mask').css('opacity','100').css('z-index','99')
+				}
+				if(opt==100){
+					$('.bottom_alert').css('opacity','0').css('z-index','-1')
+					$('.mask').css('opacity','0').css('z-index','-2')
+				}
+			})
+			$('.close').click(function(){
+				$('.bottom_alert').css('opacity','0').css('z-index','-1')
+				$('.mask').css('opacity','0').css('z-index','-2')
+			})
+			$('.zffs1').click(function(){
+				$('.zffs1').children('span').css('color','red')
+				$('.zffs2').children('span').css('color','#000')
+			})
+			$('.zffs2').click(function(){
+				$('.zffs2').children('span').css('color','red')
+				$('.zffs1').children('span').css('color','#000')
+			})
+		</script>
+	</body>
+
+</html>

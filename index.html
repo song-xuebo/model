@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<style>
+			.main_content{ height: auto; overflow: hidden; padding-bottom: 1rem;}
+			.main_btn_img::-webkit-scrollbar {display:none}
+		</style>
+	</head>
+	<body>
+		<div class="main_header">
+			<li><img src="img/main_left_button.gif" /></li>
+			<li></li>
+			<li><img src="img/main_rigth_button.gif" /></li>
+		</div>
+		<div class="banner">
+		  <div class="swiper-container" id="div2">
+			<div class="swiper-wrapper">
+		       <div class="swiper-slide" id="op1"><img src="img/banner_01.jpg" id="banner-img"></div>
+		       <div class="swiper-slide" id="op2"><img src="img/banner_01.jpg" id="banner-img"></div>
+			</div>
+		    <div class="pagination"></div>
+		  </div>
+		</div>
+		<script>
+			var mySwiper=new Swiper('#div2',{
+					loop:true,
+					effect:'slide',
+					autoplay:3000,
+					pagination: '.pagination',//分页
+					autoplayDisableOnInteraction:false,
+					initialSlide :1,  //初始化第几个图片显示，默认是0
+					direction : 'horizontal',  //方向vertical
+					speed:300,  //切换速度
+			})
+		</script>
+		<div class="main_btn">
+			<div class="main_btn_img" >
+				<li><a href="###"><img src="img/main_button_img_01.png" /></a></li>
+				<li><a href="###"><img src="img/main_button_img_02.png" /></a></li>
+				<li><a href="###"><img src="img/main_button_img_03.png" /></a></li>
+				<li><a href="###"><img src="img/main_button_img_04.png" /></a></li>
+				<li><a href="###"><img src="img/main_button_img_05.png" /></a></li>
+				<li><a href="###"><img src="img/main_button_img_06.png" /></a></li>
+				<li><a href="###"><img src="img/main_button_img_07.png" /></a></li>
+				<li><a href="###"><img src="img/main_button_img_08.png" /></a></li>
+			</div>
+			<div class="img_leng">
+				<div class="scoll_block"></div>
+			</div>
+		</div>
+		<script>
+			var div_w=0  //一共宽度
+			var div_display_w=0  //显示宽度
+			var img_sum=$('.main_btn_img li').length
+			for(i=0;i<img_sum;i++){  //一共的宽度
+				div_w+=$('.main_btn_img li').eq(i).outerWidth(true)
+			}
+			for(i=0;i<5;i++){  //显示的宽度
+				div_display_w+=$('.main_btn_img li').eq(i).outerWidth(true)
+			}
+			var overflow_w=div_w-div_display_w //超出部分宽度
+			//比例
+			var bl=20/overflow_w;  
+			$('.main_btn_img').scroll(function(){
+				var scroll_l=$('.main_btn_img').scrollLeft();
+				$('.scoll_block').css("margin-left",scroll_l*bl)
+			})	
+		</script>
+		<div class="renmeng_tuijian">
+			热门推荐
+		</div>
+		<div class="main_content">
+			<div>
+				<p><img src="img/main_content01.png" /></p>
+				<p>
+					<span>热门教程热门教程热门教</span>
+					<span>讲师：张三</span>
+					<span class="fa fa-heart-o">&nbsp;&nbsp;20人关注</span>
+				</p>
+			</div>
+			<div>
+				<p><img src="img/main_content02.png" /></p>
+				<p>
+					<span>热门教程热门教程热</span>
+					<span>讲师：张三</span>
+					<span class="fa fa-heart-o">&nbsp;&nbsp;20人关注</span>
+				</p>
+			</div>
+			<div>
+				<p><img src="img/main_content02.png" /></p>
+				<p>
+					<span>热门教程热门教程热</span>
+					<span>讲师：张三</span>
+					<span class="fa fa-heart-o">&nbsp;&nbsp;20人关注</span>
+				</p>
+			</div>
+			<div>
+				<p><img src="img/main_content02.png" /></p>
+				<p>
+					<span>热门教程热门教程热</span>
+					<span>讲师：张三</span>
+					<span class="fa fa-heart-o">&nbsp;&nbsp;20人关注</span>
+				</p>
+			</div>
+		</div>
+		<div class="main_bottom">
+		    <div class="main_bottom_center">
+		    	<li class="main_bottom1"><a href="###">首页</a></li>
+		    	<li class="main_bottom2 two"><a href="./zhibo_class.html">直播</a></li>
+		    	<li class="main_bottom3"><a href="./dianbo_class.html">点播</a></li>
+		    	<li class="main_bottom4"><a href="./wode.html">我的</a></li>
+		    </div>
+		</div>
+		<script>
+			$('.main_bottom_center li:nth-child(1)').addClass('one').removeClass('main_bottom1')
+			$('.main_bottom_center li:nth-child(2)').addClass('main_bottom2').removeClass('two')
+			$('.main_bottom_center li:nth-child(3)').addClass('main_bottom3').removeClass('three')
+			$('.main_bottom_center li:nth-child(4)').addClass('main_bottom4').removeClass('four')
+		</script>
+	</body>
+</html>
